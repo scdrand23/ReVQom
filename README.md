@@ -139,7 +139,7 @@ Before running inference, update the dataset paths in each checkpoint's `config.
 
 ## Acknowledgments
 
-This codebase builds on [OpenCOOD](https://github.com/DerrickXuNu/OpenCOOD), [CoBEVT](https://github.com/DerrickXuNu/CoBEVT), and [vector-quantize-pytorch](https://github.com/lucidrains/vector-quantize-pytorch). Supported by the US DOT Safety21 University Transportation Center, Carnegie Mellon University.
+This codebase builds on [OpenCOOD](https://github.com/DerrickXuNu/OpenCOOD), [CoBEVT](https://github.com/DerrickXuNu/CoBEVT), and [vector-quantize-pytorch](https://github.com/lucidrains/vector-quantize-pytorch).
 
 ## License
 
