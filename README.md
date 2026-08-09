@@ -118,12 +118,11 @@ hf download scdrand23/ReVQom --local-dir checkpoints
 
 Each checkpoint ships with its exact training `config.yaml`:
 
-| Checkpoint | Config | Dataset | Stored eval AP@0.3/AP@0.5/AP@0.7 |
-|------------|--------|---------|----------------------------------|
+| Checkpoint | Config | Dataset | Eval AP@0.3/AP@0.5/AP@0.7 |
+|------------|--------|---------|---------------------------|
 | `checkpoints/revqom_s_k64_dairv2x` | K=64, n_q=3, C_rr=16, EMA 0.8, epoch 30 | DAIR-V2X | 0.751 / 0.646 / 0.375 |
-| `checkpoints/revqom_m_k256_dairv2x` | K=256, n_q=3, C_rr=16, EMA 0.8, epoch 30 | DAIR-V2X | see note |
 
-The ReVQom-S checkpoint's stored evaluation (0.751/0.646) matches the experiment records for the paper's K=64 configuration. For the ReVQom-M checkpoint, the stored evaluation in the training directory reads higher than the paper's Table 1 entry (0.753/0.666); re-evaluate with the inference command above to confirm numbers on your setup. No trained OPV2V checkpoint is included in this release.
+The ReVQom-S evaluation matches the experiment records for the paper's K=64 configuration. Additional checkpoints (ReVQom-M, K=256) will be added after re-evaluation.
 
 Before running inference, update the dataset paths in each checkpoint's `config.yaml` to point to your local dataset.
 
